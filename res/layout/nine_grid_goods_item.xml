@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="97.0dip"
+    android:layout_height="97.0dip"
+    android:orientation="vertical"
+    android:layout_marginLeft="10.0dip"
+    android:background="@drawable/border_82" >
+
+    <ImageView
+        android:id="@id/goodsIconIv"
+        android:layout_width="95.0dip"
+        android:layout_height="95.0dip"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginTop="1.0dip"/>
+    
+    <TextView android:id="@id/nineItemNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="1.0dip"
+        style="@style/style_13_9F9F9F"/>
+    
+    <TextView android:id="@id/nineItemPriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="1.0dip"
+        style="@style/style_13_9F9F9F"/>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_backgroud" >
+
+    
+    
+    <FrameLayout
+        android:id="@id/fraTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg" >
+
+        <TextView
+            android:id="@id/textTitle"
+            style="@style/style_18_BEBEBE_BOLD"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/prod_list" />
+
+        <TextView
+            android:id="@id/backTv"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goback"
+            android:background="@anim/head_back"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@id/linRank"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fraTitle"
+        android:background="@drawable/segment_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/textRankSale"
+            style="@style/style_13_FFFFFF_BOLD"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/segment_selected_1_bg"
+            android:gravity="center"
+            android:text="@string/sales" />
+
+        <TextView
+            android:id="@id/textRankPrice"
+            style="@style/style_13_4B4B4B_BOLD"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/segment_normal_2_bg"
+            android:gravity="center"
+            android:text="@string/price" />
+
+        <TextView
+            android:id="@id/textRankGood"
+            style="@style/style_13_4B4B4B_BOLD"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/segment_normal_2_bg"
+            android:gravity="center"
+            android:text="@string/goodDegree" />
+
+        <TextView
+            android:id="@id/textRankTime"
+            style="@style/style_13_4B4B4B_BOLD"
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/segment_normal_3_bg"
+            android:gravity="center"
+            android:text="@string/groundingTime" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/productLv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomBar"
+        android:layout_below="@id/linRank"
+        android:layout_marginBottom="50.0dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/listview_item_line"
+        android:listSelector="@anim/index_item_bg" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listProduct"
+        android:src="@drawable/listview_item_line" />
+
+    <TextView
+        android:id="@id/textNull"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="暂无商品"
+        android:visibility="gone" />
+
+    <include
+        android:id="@id/bottomBar"
+        layout="@layout/bottombar" />
+
+    <TextView
+        android:id="@+id/filtTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@anim/head_button"
+        android:gravity="center"
+        android:text="@string/filt_title" />
+
+</RelativeLayout>

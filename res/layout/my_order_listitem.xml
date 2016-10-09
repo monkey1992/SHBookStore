@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@anim/shape_rounded_rectangle"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5.0dip" 
+    style="@style/style_order_listitem">
+	
+    <RelativeLayout
+        android:id="@+id/order_item_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+    <TextView 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:id="@+id/tv_bianhao_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单编号："
+        android:textSize="12sp"
+        android:textColor="#000000"
+        />
+	<TextView 
+	    android:layout_marginTop="6dp"
+	    android:layout_toRightOf="@id/tv_bianhao_key"
+        android:id="@+id/tv_bianhao_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10010203315171"
+        android:textSize="12sp"
+        android:textColor="#BFBFBF"
+        />
+	<TextView 
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_below="@id/tv_bianhao_key"
+        android:id="@+id/tv_zonge_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单总额："
+        android:textSize="12sp"
+        android:textColor="#000000"
+        />
+	<TextView 
+	    android:layout_marginTop="5dp"
+	    android:layout_below="@id/tv_bianhao_key"
+	    android:layout_toRightOf="@id/tv_zonge_key"
+        android:id="@+id/tv_zonge_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥194.00"
+        android:textSize="12sp"
+        android:textColor="#BFBFBF"
+        />
+	<TextView 
+	    android:layout_marginTop="5dp"
+	    android:layout_toRightOf="@id/tv_zonge_value"
+	    android:layout_below="@id/tv_bianhao_key"
+	    android:layout_marginLeft="20dp"
+        android:id="@+id/tv_state_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="状态："
+        android:textSize="12sp"
+        android:textColor="#000000"
+        />
+	<TextView 
+	    android:layout_marginTop="5dp"
+	    android:layout_toRightOf="@id/tv_state_key"
+	    android:layout_below="@id/tv_bianhao_key"
+        android:id="@+id/tv_state_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未确认"
+        android:textSize="12sp"
+        android:textColor="#BFBFBF"
+        />
+	<TextView 
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="8dp"
+	    android:layout_below="@id/tv_zonge_key"
+        android:id="@+id/tv_ymdhms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2011/01/12    14:50:06"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        />
+	
+	<ImageView 
+	    android:layout_marginRight="10dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:src="@drawable/arrow"/>
+	</RelativeLayout>
+    <!-- <LinearLayout
+        android:id="@id/linLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/order_item_rel"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3.0dip"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@id/linOrderPayCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linLine"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/textCancelOrder"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:paddingRight="10.0dip"
+            android:text="取消订单" />
+    </LinearLayout> -->
+
+</RelativeLayout>

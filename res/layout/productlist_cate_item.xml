@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginTop="5dp" >
+
+    <com.ithm27.redbabyhm1.view.myui.SmartImageView
+        android:id="@+id/iv_productlist_item_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/product_02"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/btn_productlist_item_prodinfo"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/arrow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/btn_productlist_item_prodinfo"
+        android:layout_toRightOf="@id/iv_productlist_item_icon" >
+
+        <TextView
+            android:id="@+id/tv_productlist_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="鹿鹿鹿奶粉(特惠促销装)"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_productlist_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_productlist_item_title"
+            android:layout_marginBottom="3dp"
+            android:text="￥20"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_productlist_item_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/tv_productlist_item_price" >
+
+            <TextView
+                android:id="@+id/tv_productlist_item_marketprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="￥200" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/line" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_productlist_item_commentnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_productlist_item_price"
+            android:textSize="10sp"
+            android:text="已有xxx人评价" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/head" />
+ 	<com.xiaoyu.shbookstore.customctrl.MyScrollView 
+ 	    android:layout_marginTop="40.0dip"
+     	android:layout_below="@id/head"
+     	android:layout_width="fill_parent"
+     	android:layout_height="fill_parent"
+		android:clipChildren="true"
+     >
+    	<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@id/fraHead"
+	        android:layout_marginBottom="55.0dip"
+	        android:orientation="vertical" >
+        
+
+        <TextView
+            android:id="@+id/textParent1"
+            style="@style/style_18_C21513_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/segment_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip" />
+
+        <GridView
+            android:id="@+id/nineGv1"
+            android:layout_width="wrap_content"
+            android:layout_height="175.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/home_backgroud"
+            android:columnWidth="90.0dip"
+            android:gravity="center"
+            android:horizontalSpacing="5.0dip"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textParent2"
+            style="@style/style_18_C21513_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/segment_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip" />
+
+        <GridView
+            android:id="@+id/nineGv2"
+            android:layout_width="wrap_content"
+            android:layout_height="175.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/home_backgroud"
+            android:columnWidth="90.0dip"
+            android:gravity="center"
+            android:horizontalSpacing="5.0dip"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textParent3"
+            style="@style/style_18_C21513_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/segment_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip" />
+
+        <GridView
+            android:id="@+id/nineGv3"
+            android:layout_width="wrap_content"
+            android:layout_height="175.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/home_backgroud"
+            android:columnWidth="90.0dip"
+            android:gravity="center"
+            android:horizontalSpacing="5.0dip"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textBrandInfoNull"
+            style="@style/style_16_666666_BOLD"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:text="服务端无数据"
+            android:visibility="gone" />
+       
+    </LinearLayout>
+	</com.xiaoyu.shbookstore.customctrl.MyScrollView>
+    <include
+        android:id="@id/bottomBar"
+        layout="@layout/bottombar" />
+
+</RelativeLayout>

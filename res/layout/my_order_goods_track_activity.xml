@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/home_backgroud" >
+
+    <FrameLayout
+        android:id="@id/fraHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg" >
+
+        <TextView
+            android:id="@id/textTitle"
+            style="@style/style_18_BEBEBE_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="物流查询" />
+
+        <TextView
+            android:id="@+id/head_back_orderDetail"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@anim/head_back"
+            android:gravity="center"
+            android:text="返 回" />
+    </FrameLayout>
+    
+    <LinearLayout
+        android:layout_below="@id/fraHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	<FrameLayout 
+	    	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@anim/shape_rounded_rectangle"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:background="#00000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8.0dip" 
+                android:paddingTop="4.0dip">
+                <TextView
+                    android:id="@+id/textGoodsTrackWayKey1"
+                    style="@style/style_14_666666_BOLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="right"
+                    android:maxWidth="200.0dip"
+                    android:text="发货方式：" />
+                <TextView
+                    android:id="@+id/textGoodsTrackWay1"
+                    style="@style/style_14_9F9F9F_BOLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/textGoodsTrackWayKey1"
+                    android:gravity="center"
+                    android:singleLine="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="#00000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8.0dip"
+                android:paddingTop="4.0dip" >
+				<TextView
+                    android:id="@+id/textGoodsTrackWayKey2"
+                    style="@style/style_14_666666_BOLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="right"
+                    android:maxWidth="200.0dip"
+                    android:text="物流编号：" />
+                <TextView
+                    android:id="@+id/textGoodsTrackWay2"
+                    style="@style/style_14_9F9F9F_BOLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/textGoodsTrackWayKey2"
+                    android:gravity="center"
+                    android:singleLine="true"/>
+                
+            </RelativeLayout>
+                
+            <RelativeLayout
+                android:background="#00000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8.0dip" 
+                android:paddingTop="4.0dip">
+				<TextView
+                    android:id="@+id/textGoodsTrackWayKey3"
+                    style="@style/style_14_666666_BOLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="right"
+                    android:maxWidth="200.0dip"
+                    android:text="快递公司：" />
+                <TextView
+                    android:id="@+id/textGoodsTrackWay3"
+                    style="@style/style_14_9F9F9F_BOLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/textGoodsTrackWayKey3"
+                    android:gravity="center"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="#00000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8.0dip"
+                android:paddingBottom="4dip" 
+                android:paddingTop="4.0dip">
+				<TextView
+                    android:id="@+id/textGoodsTrackWayKey4"
+                    style="@style/style_14_666666_BOLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="right"
+                    android:maxWidth="200.0dip"
+                    android:text="运单号码：" />
+                <TextView
+                    android:id="@+id/textGoodsTrackWay4"
+                    style="@style/style_14_9F9F9F_BOLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/textGoodsTrackWayKey4"
+                    android:gravity="center"
+                    android:singleLine="true"/>
+            </RelativeLayout>
+        	</LinearLayout>
+        	<RelativeLayout 
+            android:id="@+id/progressBarforLogistic"
+            android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:background="#00000000">
+	    	<ProgressBar
+	            android:background="#00000000"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" 
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="155dip" />
+        </RelativeLayout>
+      </FrameLayout>
+			<TextView
+                style="@style/style_15_666666_BOLD"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="物流跟踪：" />
+			<TextView 
+			    	style="@style/style_14_9F9F9F_BOLD"
+            	    android:layout_marginLeft="10.0dip"
+		            android:layout_marginRight="10.0dip"
+		            android:layout_width="fill_parent"
+                	android:layout_height="wrap_content"
+                	android:text="以下信息由物流给您公司提供，有问题请上该物流公司官方网站查询"/>
+			<FrameLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10.0dip"
+	            android:layout_marginRight="10dip"
+	            android:layout_marginTop="2.0dip"
+	            android:layout_marginBottom="55.0dip">
+            	<TextView 
+            	    android:id="@+id/noLogisticsInfo"
+            	    style="@style/style_15_666666"
+            	    android:background="@anim/shape_rounded_selectable"
+            	   	android:layout_width="match_parent"
+			    	android:layout_height="match_parent"
+			    	android:text="暂无信息" 
+			    	android:gravity="center"/>
+	            <ListView
+	                android:visibility="invisible"
+	                android:id="@+id/listGoodsTrackDetail"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:cacheColorHint="#00000000"
+	                android:footerDividersEnabled="false"
+	                android:headerDividersEnabled="true"
+	                android:background="@anim/shape_rounded_selectable"/>
+            </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@id/bottomBar"
+        layout="@layout/bottombar" />
+
+</RelativeLayout>

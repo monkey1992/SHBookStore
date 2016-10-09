@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_backgroud" >
+
+    <FrameLayout
+        android:id="@id/fraHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg" >
+
+        <TextView
+            android:id="@id/backTv"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@anim/head_back"
+            android:gravity="center"
+            android:text="更 多" />
+
+        <TextView
+            style="@style/style_18_BEBEBE_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="帮 助中心" />
+    </FrameLayout>
+
+ <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/fraTitle"
+        android:layout_marginTop="50dp"
+        android:layout_above="@id/bottomBar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/ShoppingGuideRl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@anim/shape_rounded_selectable"
+                android:gravity="center_vertical"
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:id="@+id/ShoppingGuide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5.0dip"
+               	    android:layout_marginRight="5.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:text="@string/ShoppingGuide" 
+                    android:textSize="14.0sp"  />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/AfterSaleRl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@anim/shape_rounded_selectable"
+                android:gravity="center_vertical"
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:id="@+id/AfterSale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/AfterSale"
+                    android:textSize="14.0sp"  />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/DeliveryMethodRl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@anim/shape_rounded_selectable"
+                android:gravity="center_vertical"
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:id="@+id/DeliveryMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/DeliveryMethod"
+                    android:textSize="14.0sp"  />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+           
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@id/textNull"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="网络未连接,无法请求帮助信息！"
+        android:visibility="gone" />
+
+    <include
+        android:id="@id/bottomBar"
+        layout="@layout/bottombar" />
+
+</RelativeLayout>

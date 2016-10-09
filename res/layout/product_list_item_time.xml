@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.ithm27.redbabyhm1.view.myui.SmartImageView
+        android:id="@+id/iv_product_item_time_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_product_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_product_item_time_icon"
+        android:layout_toRightOf="@id/iv_product_item_time_icon"
+        android:text="aaaaaa"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <FrameLayout
+        android:layout_toRightOf="@id/iv_product_item_time_icon"
+        android:layout_below="@id/tv_product_time_title"
+        android:id="@+id/fl_product_time_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/tv_time_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="￥200" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/line" />
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_product_favorites_ll"
+         android:layout_toRightOf="@id/iv_product_item_time_icon"
+         android:layout_below="@id/fl_product_time_fl"
+        android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+        <LinearLayout 
+           
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#99000000"
+            android:text="限时特价："
+            />
+         <TextView 
+             android:id="@+id/tv_time_tj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textSize="20dp"
+            android:text=" ￥20"
+            />
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/tv_product_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textSize="12dp"
+            android:text="剩余时间：03：03：03"
+            />
+        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_time_buy"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_product_favorites_ll"
+        android:layout_toRightOf="@id/ll_product_favorites_ll"
+        android:background="@drawable/head_button_selected"
+        android:text="立即抢购"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

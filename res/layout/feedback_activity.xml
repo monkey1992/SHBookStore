@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_backgroud"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/fraHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg" >
+
+        <TextView
+            android:id="@id/backTv"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:background="@anim/head_back"
+            android:gravity="center"
+            android:text="@string/goback" />
+
+        <TextView
+            style="@style/style_18_BEBEBE_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="意见反馈" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fraHead"
+        android:layout_marginBottom="50.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5.0dip"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="类型："
+                    android:textColor="@color/black"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/feedbackTv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/detail_has_size_bg"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:text="请选择"
+                    android:textColor="#ff000000"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="内容："
+                    android:textColor="@color/black"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/contentEt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120.0dip"
+                    android:gravity="top|left|center"
+                    android:hint="您的意见是我们不断改进的动力，请留下您在使用过程中遇到的问题或者提出宝贵意见。"
+                    android:maxLength="200"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="联系邮箱："
+                    android:textColor="@color/black"
+                    android:textSize="15.0sp" />
+
+                <EditText
+					android:id="@+id/emailEt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入您的邮箱（必填）"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话："
+                    android:textColor="@color/black"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/mobileEt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入您的手机号码或者座机号（必填）"
+                    android:maxLength="18"
+                    android:phoneNumber="true"
+                    android:singleLine="true"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5.0dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/submitTv"
+                    style="\@style/style_15_FFFFFF"
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@anim/button_long"
+                    android:gravity="center"
+                    android:padding="5.0dip"
+                    android:text="提 \u0020\u0020\u0020交" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@id/bottomBar"
+        layout="@layout/bottombar" />
+
+</RelativeLayout>

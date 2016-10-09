@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_backgroud" >
+
+    <FrameLayout
+        android:id="@id/fraHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg" >
+
+        <TextView
+            android:id="@id/backTv"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@anim/head_back"
+            android:gravity="center"
+            android:text="更 多" />
+
+        <TextView
+            android:id="@+id/help_detail_tv"
+            style="@style/style_18_BEBEBE_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="购物指南" />
+    </FrameLayout>
+
+ <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/fraTitle"
+        android:layout_marginTop="50dp"
+        android:layout_above="@id/bottomBar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5.0dip"
+               	    android:layout_marginRight="5.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:text="问：xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                    android:textColor="#333333"
+                    android:textSize="22.0sp"  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+               	    android:layout_marginRight="5.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:text="答：XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                    android:textSize="18.0sp"  />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@id/textNull"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="网络未连接,无法请求帮助信息！"
+        android:visibility="gone" />
+
+    <include
+        android:id="@id/bottomBar"
+        layout="@layout/bottombar" />
+
+</RelativeLayout>

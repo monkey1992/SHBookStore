@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_backgroud"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@id/fraHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg" >
+
+        <TextView
+            style="@style/style_18_BEBEBE_BOLD"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="注册" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fraHead"
+        android:background="@anim/shape_rounded_rectangle"
+        android:layout_marginBottom="50.0dip"
+        android:layout_margin="15dp"
+        android:layout_above="@id/bottomBar"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/login_name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="10.0dip"
+            android:layout_margin="5.0dip"  >
+
+            <TextView
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/login_name"
+                android:textColor="@color/black"
+                android:textSize="15.0sp" />
+
+            <EditText
+                android:id="@+id/regist_name_edit"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                android:textSize="15.0sp" />
+            
+            
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_pwd_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_name_layout"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_margin="5.0dip" >
+
+            <TextView
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/login_pwd"
+                android:textColor="@color/black"
+                android:textSize="15.0sp" />
+
+            <EditText
+                android:id="@+id/regist_pwd_edit"
+                android:password="true"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/login_confirm_pwd_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_pwd_layout"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_margin="5.0dip" >
+
+            <TextView
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:text="确认密码："
+                android:textColor="@color/black"
+                android:textSize="15.0sp" />
+
+            <EditText
+                android:id="@+id/regist_confirm_pwd_edit"
+                android:password="true"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+        
+        
+        
+
+          <TextView
+            android:id="@+id/regist_text"
+            style="@style/style_17_FFFFFF_BOLD"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_pwd_layout"
+            android:layout_gravity="center"
+            android:background="@anim/button_long"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="注册" />
+    </LinearLayout>
+
+    <include
+        android:id="@id/bottomBar"
+        layout="@layout/bottombar" />
+
+</RelativeLayout>

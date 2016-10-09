@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@id/addressTV"
+        style="@style/style_16_666666_BOLD"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15.0dip"
+        android:text="收货地址"/>
+    
+    <TextView
+        android:id="@id/addressnameTV"
+        style="@style/style_16_666666_BOLD"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15.0dip"
+        android:layout_toRightOf="@id/imgIcon" 
+        android:text="name"
+        />
+    
+    <TextView
+        android:id="@id/phoneTV"
+        style="@style/style_16_666666_BOLD"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15.0dip"
+        android:layout_toRightOf="@id/imgIcon" 
+        android:text="phone"/>
+    
+    <!-- <TextView
+        android:id="@id/address0TV"
+        style="@style/style_16_666666_BOLD"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15.0dip"
+        android:text=""
+         /> -->
+    
+    <TextView
+        android:id="@id/addressdetilTV"
+        style="@style/style_16_666666_BOLD"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15.0dip"
+        android:text="addressdetill"
+         />
+    
+    
+    
+ 
+</LinearLayout>

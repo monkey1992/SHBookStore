@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">山海书城欢迎您!</string>
+    <string name="login_name">用户名：</string>
+    <string name="login_pwd">密   码：</string>
+    <string name="app_name">山海书城</string>
+    <string name="net_error">当前网络不可用，请先连接Internet！</string>
+    <string name="my_account_title">我的账户</string>
+    <string name="my_ordr_title">我的订单</string>
+    <string name="address_manage_title">地址管理</string>
+    <string name="my_favorite_title">收藏夹</string>
+    <string name="recent_browse_title">最近浏览</string>
+    <string name="menu_home">主页</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_favorites">收藏夹</string>
+    <string name="menu_myorder">我的订单</string>
+    <string name="menu_history">浏览历史</string>
+    <string name="menu_exit">退出</string>
+    <string name="about_title">关 于</string>
+    <string name="about_comp">佳娃科技有限公司</string>
+    <string name="more">更多</string>
+    <string name="category_title">分类</string>
+    <string name="no_information">加载中...</string>
+    <string name="loadTitle"><strong>正在更新数据</strong></string>
+    <string name="LoadContent"><strong>请稍候……</strong></string>
+    <string name="sales">销量</string>
+    <string name="price">价格</string>
+    <string name="goodDegree">好评度</string>
+    <string name="groundingTime">上架时间</string>
+    <string name="goback">返回</string>
+    <string name="prod_detail">商品详情</string>
+    <string name="shopcar">加入购物车</string>
+    <string name="collect">收藏</string>
+    <string name="prom_bulletin">促销优惠</string>
+    <string name="limit_buy">限时抢购</string>
+    <string name="help_title">帮助中心</string>
+    <string name="ordr_tel">01088499999</string>
+    <string name="get_userinfo">userinfo.jsp</string>
+    <string name="get_favorite_list">android_favorite.jsp</string>
+    <string name="get_logistics">logistics.jsp</string>
+    <string name="get_order_list">ordrlist.jsp</string>
+    <string name="get_address_list">android_address.jsp</string>
+    <string name="save_address">addresssave.jsp</string>
+    <string name="login">checkLogin.jsp</string>
+  
+    <string name="app_host">http://10.0.2.2:8080/ECServer_HH/</string>
+ 
+    <string name="topic_plist">topic/plist</string>
+    <string name="home">home</string>
+    <!-- peiwen -->
+    <string name="hotproduct">hotproduct</string>
+    <string name="productcommit">product/comment</string>
+    <string name="productdetail">product</string>
+    <!-- peiwen --> 
+ 
+    <string name="category">category</string>
+    <string name="prodList">productlist</string>
+    <string name="product">product</string>
+    <string name="description">/product/description</string>
+    <!-- author:oy uses start -->
+    <string name="search_recommend">search/recommend</string>
+    <string name="addresslist">addresslist</string>
+
+    <string name="userinfo">Userinfo</string>
+    <string name="favorites">favorites</string>
+    <string name="mylogin">login</string>
+    
+    <string name="addresssave">addresssave</string>
+    <string name="regist">Register</string>
+    <!-- author:oy uses end -->
+
+
+    <!-- zhangmao -->
+    <string name="newproduct">newproduct</string>
+    <string name="checkout">checkout</string>
+    <string name="ordersubmit">ordersubmit</string>
+    <!-- zhangmao -->
+
+
+    <!-- joychang -->
+    <string name="orderlist">orderlist</string>
+    <string name="orderdetail">orderdetail</string>
+    <!-- joychang -->
+
+
+    <!-- zclong -->
+    <string name="topic">topic</string>
+    <string name="productList">productlist</string>
+    <!-- zclong -->
+
+
+    <!-- author:LinKang start -->
+    <string name="limitbuy">limitbuy</string>
+    <string name="cart">cart</string>
+    <string name="brand">brand</string>
+
+    <string-array name="invoice_content">
+        <item>图书</item>
+        <item>音响</item>
+        <item>游戏</item>
+        <item>软件</item>
+        <item>资料</item>
+        <item>办公用品</item>
+    </string-array>
+    <!-- author:LinKang end -->
+
+
+    <!-- author:wangzilong start -->
+    <string name="filt_title">筛选</string>
+    <string name="productlist">productlist</string>
+    <!-- author:wangzilong end -->
+    
+    
+    <!-- wangwang start -->
+    <string name="prod_list">商品列表</string>
+    <string name="search">search</string>
+    <string name="ShoppingGuide">购物指南</string>
+    <string name="AfterSale">售后服务</string>
+    <string name="DeliveryMethod">配送方式</string>
+    <string name="userfeedback">用户反馈</string>
+    <!-- wangwang end -->
+    <string name="my_order">我的订单</string>
+    <string name="my_address">地址管理</string>
+    <string name="my_favorities">收藏夹</string>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <EditText
+        android:id="@+id/dialog_remark_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|left|center"
+        android:maxLength="50"
+        android:padding="10.0dip" />
+
+    <TextView
+        android:id="@+id/tv_remark"
+        style="@style/style_16_666666"
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:layout_below="@id/dialog_remark_edit"
+        android:text="留言请在50字以内" />
+	 <LinearLayout
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" 
+        android:layout_below="@id/tv_remark"
+        >
+
+        <Button
+               android:background="@drawable/button_select"
+            android:id="@+id/ok"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:text="确定" />
+
+        <Button
+               android:background="@drawable/button_select"
+            android:id="@+id/cancel"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+    </LinearLayout>
+</RelativeLayout>

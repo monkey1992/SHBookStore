@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:paddingBottom="5.0dip"
+    android:paddingTop="5.0dip" 
+    android:id="@+id/ll_limit_buy_item">
+
+    <RelativeLayout
+        android:id="@id/relImage"
+        android:layout_width="82.0dip"
+        android:layout_height="82.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10.0dip" >
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@id/goodsIconIv"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginTop="1.0dip" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_80" />
+
+        <ImageView
+            android:id="@id/imgIsNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/isnew"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@id/imgIsBargain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/issale"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/relContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="10.0dip" >
+
+        <TextView
+            android:id="@id/textClothesName"
+            style="@style/style_14_000000"
+            android:layout_width="180.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:maxLines="1"
+            android:text="卢嘉丽胶丸(又该因子)30粒"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_limit_buy_marketPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/textClothesName">
+
+            <TextView
+                android:id="@+id/tv_limit_buy_marketPrice"
+                style="@style/style_13_9F9F9F_BOLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="2.0dip"
+                android:text="￥688" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_limit_buy_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_limit_buy_marketPrice"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center_vertical" >
+
+             <TextView
+                android:id="@+id/limitPrice"
+                style="@style/style_18_C21513_BOLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textClothesName"
+                android:text="限时特价"/>
+            
+            <TextView
+                android:id="@+id/textClothesPrice"
+                style="@style/style_13_9F9F9F_BOLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_below="@id/textClothesName"
+                android:layout_toRightOf="@id/limitPrice"
+                android:text=" ￥68.00"/>
+
+           
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textLeftTime"
+            style="@style/style_13_C21513_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_limit_buy_price"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="3.0dip"
+            android:text="剩余时间: 03:30:15"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_limit_buy_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow" 
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/tv_limit_buy_AddToCart"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="60dip"
+            android:layout_height="25dip"
+            android:layout_toRightOf="@id/textLeftTime"
+            android:layout_alignParentBottom="true"
+            android:background="@anim/product_detail_shop"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:text="立即抢购" />
+    </RelativeLayout>
+
+</LinearLayout>
